@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CATALOGO 1</title>
+  <!-- CARGA CSS BOOTSTRAP -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- DIV QUE SERÁ REDEFINIDO MEDIANTE navbar.js -->
+  <div id="navbar"></div>
+  <!-- DIV CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <button type="button" class="btn btn-primary m-5" onclick="load()">CARGAR CATALOGO CON BOTÓN</button>
+    <button type="button" class="btn btn-primary m-5" onclick="remove()">BORRAR CARDS</button>
+    <!-- DIV QUE SERÁ REDEFINIDO MEDIANTE cartalogov1.js -->
+    <div id="catalogo" class="row"></div>
+  </div>
+  <!-- CARGA JS BOOTSTRAP -->
+  <script src="assets/js/bootstrap/bootstrap.js"></script>
+  <!-- CARGA JS NAVBAR -->
+  <script src="assets/js/custom/navbar.js"></script>
+  <!-- CARGA JS CATALOGOV2 -->
+  <script src="assets/js/custom/catalogov2.js"></script>
+  <!-- CARGA JS CATALOGOV1 -->
+  <script src="assets/js/custom/catalogov1.js"></script>
+  <!-- ETIQUETA PARA MOSTRAR MENSAJE DE ERROR CUANDO SE ENCUENTRE DESACTIVADO JAVASCRIPT -->
+  <noscript>
+    Lo sentimos, tu navegador no tiene soporte a javascript o se encuentra deshabilitado
+    por lo que el sitio presentará problemas en su funcionamiento.
+  </noscript>
+</body>
+
+</html>

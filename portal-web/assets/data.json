@@ -1,0 +1,32 @@
+[
+    { "codigo": 1,
+        "titulo": "RYZEN 5 PRO 3400G",
+        "imagen": "assets/img/amd_ryzen_5_pro_3400G.jpg",
+        "precio": 890900,
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis harum, repellat repellendus consequuntur molestiae pariatur sed saepe, tempora unde, quia quisquam officia obcaecati optio commodi veniam sit blanditiis! Maxime, debitis?"
+    },
+    { "codigo": 2,
+        "titulo": "ASUS F15 FX506LHB",
+        "imagen": "assets/img/asus_f15_fx506lhb.jpg",
+        "precio": 890900,
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis harum, repellat repellendus consequuntur molestiae pariatur sed saepe, tempora unde, quia quisquam officia obcaecati optio commodi veniam sit blanditiis! Maxime, debitis?"
+    },
+    { "codigo": 3,
+        "titulo": "SILLA GAMER",
+        "imagen": "assets/img/silla_gamer.jpg",
+        "precio": 890900,
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis harum, repellat repellendus consequuntur molestiae pariatur sed saepe, tempora unde, quia quisquam officia obcaecati optio commodi veniam sit blanditiis! Maxime, debitis?"
+    },
+    { "codigo": 4,
+        "titulo": "VICTUS 16",
+        "imagen": "assets/img/victus16_d0500la.jpg",
+        "precio": 890900,
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis harum, repellat repellendus consequuntur molestiae pariatur sed saepe, tempora unde, quia quisquam officia obcaecati optio commodi veniam sit blanditiis! Maxime, debitis?"
+    },
+    { "codigo": 5,
+        "titulo": "Acer AN515-54TP-1",
+        "imagen": "assets/img/acer_an515.jpg",
+        "precio": 890900,
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis harum, repellat repellendus consequuntur molestiae pariatur sed saepe, tempora unde, quia quisquam officia obcaecati optio commodi veniam sit blanditiis! Maxime, debitis?"
+    }    
+]
