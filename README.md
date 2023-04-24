@@ -56,8 +56,8 @@ Clave: 123
 
     - Se debe tener instalado python 3.10 y pip.
 
-    - Se debe tener instalado complemento de Live Serve de vscode.
+    - Se debe tener instalado complemento de Live Server de vscode.
 
-    - Documentación obtenida de [TRANSBANK](https://www.transbankdevelopers.cl/referencia/webpay#confirmar-una-transaccion).
+    - Documentación obtenida de (TRANSBANK)[https://www.transbankdevelopers.cl/referencia/webpay#confirmar-una-transaccion].
 
     - Se considero del flujo solo el caso de éxito y fracaso dejando de lado las demás condiciones de bordes para la realización de la reversa de la transacción.
