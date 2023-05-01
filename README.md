@@ -1,7 +1,14 @@
 # INTEGRACIÓN TRANSBANK FRONTEND (HTML + JAVASCRIPT) Y BACKEND DE INTEGRACIÓN CON TRANSBANK (API REST FLASK)
 
+Transbank no permite el llamado de su API REST directamente del navegador con Javascript desde el cliente. Si detecta esta acción el servicio retorna un error 401 y un bloqueo por CORS (Intercambio de recursos entre servidores).
 
+Para consumir de forma correcta la API de Transbank es necesario el llamado desde un back-end o front-end pero del lado del servidor. Por este motivo se diseña integración dividiendo en front-end y back-end los componentes que se usarán para la integración.
 
+Para la primera aplicación se hace uso de un servidor **Live Server** de **vscode** que permite desplegar aplicaciónes web (html + css + javascript) con un click y la segunda aplicación será una API REST en flask que estará encargada de llamar a la API REST de Transbank con la cual intercambiará información. En el siguiente diagrama de alto nivel simplificado se puede observar la integración.
+
+<img src="document/img/integracion_transbank.drawio.png" alt="integracion-transbank.drawio" width="600px">
+
+Para desplegar ambas aplicaciones se deberán seguir los siguientes pasos (revisar las notas al final del README.md):
 
 ### COMIENZO DEL DESPLIEGUE
 
@@ -58,6 +65,6 @@ Clave: 123
 
     - Se debe tener instalado complemento de Live Server de vscode.
 
-    - Documentación obtenida de (TRANSBANK)[https://www.transbankdevelopers.cl/referencia/webpay#confirmar-una-transaccion].
+    - Documentación obtenida de <a href="https://www.transbankdevelopers.cl/referencia/webpay#confirmar-una-transaccion">TRANSBANK</a>[TRANSBANK](https://www.transbankdevelopers.cl/referencia/webpay#confirmar-una-transaccion)
 
     - Se considero del flujo solo el caso de éxito y fracaso dejando de lado las demás condiciones de bordes para la realización de la reversa de la transacción.
