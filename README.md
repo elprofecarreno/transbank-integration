@@ -65,6 +65,6 @@ Clave: 123
 
     - Se debe tener instalado complemento de Live Server de vscode.
 
-    - Documentación obtenida de <a href="https://www.transbankdevelopers.cl/referencia/webpay#confirmar-una-transaccion">TRANSBANK</a>[TRANSBANK](https://www.transbankdevelopers.cl/referencia/webpay#confirmar-una-transaccion)
+    - Documentación obtenida de https://www.transbankdevelopers.cl/referencia/webpay#confirmar-una-transaccion
 
     - Se considero del flujo solo el caso de éxito y fracaso dejando de lado las demás condiciones de bordes para la realización de la reversa de la transacción.
