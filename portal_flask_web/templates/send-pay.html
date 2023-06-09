@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload='document.send_pay_form.submit()'>
+    <form action="{{context.transbank.url}}" name="send_pay_form" method="POST">
+        <input type="hidden" name="token_ws" value="{{context.transbank.token}}">
+        <input type="hidden" name="amount" value="{{context.amount}}">
+    </form>
+</body>
+</html>
