@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 # LOAD ENVIRONMENT
 load_dotenv()
 # IMPORT VIEWS
-from views.view_index import app_transbank_pay_view
-
+from views.view_transbank_pay import app_transbank_pay_view
+from views.view_return_pay import app_return_pay_view
 # LOAD PATH PARENTS FOLDER
 BASE_DIR = os.path.abspath(os.getcwd())
 print('BASE_DIR: ', BASE_DIR)
@@ -26,6 +26,7 @@ app = Flask(__name__, template_folder=TEMPLATE_FOLDER, static_folder=STATIC_FOLD
 
 # LOAD VIEW
 app_transbank_pay_view(app)
+app_return_pay_view(app)
 
 if __name__ == '__main__':
     app.run(host=os.getenv('APP_WEB_HOST'), port=os.getenv('APP_WEB_PORT'), debug=True)

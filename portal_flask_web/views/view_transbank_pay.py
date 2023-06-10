@@ -2,8 +2,10 @@
 from flask import render_template
 # IMPORT FLASK LIB REQUEST OBJECT
 from flask import request
-# IMPORT LIBRERIES ERROR TRACE, OPERATION SYSTEM AND REQUEST CLIENT API REST
+# IMPORT LIBRARIES ERROR TRACE, OPERATION SYSTEM AND REQUEST CLIENT API REST
 import traceback, os, requests
+# IMPORT LIBRARY URL DOMAIN
+from urllib.parse import urlparse
 
 def app_transbank_pay_view(app):
 
@@ -23,10 +25,15 @@ def app_transbank_pay_view(app):
             }
             return render_template('transbank-pay.html', context=context)
         elif  request.method == 'POST':
+
+            domain = urlparse(request.base_url)
+            host = domain.hostname
+            port = domain.port
+
             buy_order = request.form.get('buy-order')
             session_id = 12345786 # SESSION ID USER
             amount = request.form.get('amount')
-            return_url = 'http://127.0.0.1:9000/commit-pay'
+            return_url = 'http://{0}:{1}/commit-pay'.format(host, port)
 
             body = {
                 "buy_order": buy_order,
