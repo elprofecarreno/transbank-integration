@@ -29,4 +29,4 @@ APP_WEB_PORT=9000
 
 ## PORTAL FLASK WEB URL
 
-[portal-web](http://127.0.0.1:9000/)
+[portal-web](http://localhost:9000/

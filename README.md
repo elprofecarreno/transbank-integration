@@ -73,5 +73,13 @@ Clave: 123
 ## DOCKER COMPOSE DEPLOY
 
 ```
-
+docker compose up
 ```
+
+ **PORTAL FLASK WEB URL**
+
+[portal-web](http://localhost:9100/portal-web)
+
+**PORTAL FLASK WEB URL**
+
+[portal-web](http://localhost:9000/)

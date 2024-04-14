@@ -19,4 +19,4 @@
 
  ## PORTAL FLASK WEB URL
 
-[portal-web](http://127.0.0.1:9100/portal-web)
+[portal-web](http://localhost:9100/portal-web)
