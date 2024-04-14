@@ -12,6 +12,10 @@ def app_transbank_pay_view(app):
     API_REST_HOST = os.getenv('API_REST_HOST')
     API_REST_PORT = os.getenv('API_REST_PORT')
 
+    @app.route('/', methods=['GET'])
+    def home():
+        return transbank_pay_view()
+
     @app.route('/transbank-pay', methods=['GET', 'POST'])
     def transbank_pay_view():
         print('METHOD', request.method)
