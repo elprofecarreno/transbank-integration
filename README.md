@@ -78,8 +78,8 @@ docker compose up
 
  **PORTAL FLASK WEB URL**
 
-[portal-web](http://localhost:9100/portal-web)
+[http://localhost:9100/portal-web](http://localhost:9100/portal-web)
 
 **PORTAL FLASK WEB URL**
 
-[portal-web](http://localhost:9000/)
+[http://localhost:9000](http://localhost:9000)
