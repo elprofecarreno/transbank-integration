@@ -70,9 +70,12 @@ Clave: 123
     - Se considero del flujo solo el caso de éxito y fracaso dejando de lado las demás condiciones de bordes para la realización de la reversa de la transacción.
 
 
-## DOCKER COMPOSE DEPLOY
+## DEPLOY FRONT FLASK Y FRONT HTML + JAVASCRIPT 
+
+
 
 ```
+cd front-end-back-end
 docker compose up
 ```
 

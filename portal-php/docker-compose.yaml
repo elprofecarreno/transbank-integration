@@ -1,0 +1,5 @@
+services:
+  portal-php:
+    build: .
+    ports:     
+      - "8000:80"

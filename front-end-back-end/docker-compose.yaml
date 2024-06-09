@@ -1,0 +1,25 @@
+services:
+  api-rest-cliente-transbank:
+    build: ./api-rest-cliente-transbank
+    networks:
+      - transbank-net
+
+  portal-flask-web:
+    build: ./portal_flask_web
+    environment:
+     - API_REST_HOST=api-rest-cliente-transbank
+     - API_REST_PORT=8900
+     - APP_WEB_PORT=9000
+     - APP_WEB_HOST=0.0.0.0
+    #ports:
+    # - "9000:9000"       
+    networks:
+      - transbank-net      
+
+  portal-web:
+    build: ./portal-web
+    ports:
+      - "9100:80"
+
+networks:
+  transbank-net:
