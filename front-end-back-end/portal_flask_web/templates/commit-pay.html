@@ -7,6 +7,45 @@
     <title>COMMIT PAY</title>
 </head>
 <body>
-    {{token_ws}}
+    <table id="tbl-transaction-detail" class="table" style="max-width:650px;margin: auto;">
+        <caption>Detalle de Pago: <strong>{{transaction_detail.state}}</strong></caption>
+        <thead>
+          <tr hidden >
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Estado:</strong></td>
+                <td>{{transaction_detail.state}}</td>      
+            </tr>
+            <tr>
+                <td><strong>Fecha:</strong></td>
+                <td>{{transaction_detail.transaction_date}}</td>      
+            </tr>
+            <tr>
+                <td><strong>N° de tarjeta:</strong></td>
+                <td>XXXX XXXX XXXX {{transaction_detail.card_number}}</td>      
+            </tr>
+            <tr>
+                <td><strong>Tipo de Pago:</strong></td>
+                <td>{{transaction_detail.pay_type}}</td>      
+            </tr>
+            <tr>
+                <td><strong>Monto Pagado:</strong></td>
+                <td>{{transaction_detail.amount}}</td>      
+            </tr>
+            <tr>
+                <td><strong>Comprobante:</strong></td>
+                <td>{{transaction_detail.authorization_code}}</td>      
+            </tr>
+            <tr>
+                <td><strong>N° Orden:</strong></td>
+                <td>{{transaction_detail.buy_order}}</td>      
+            </tr>                                                
+        </tbody>
+    </table>
 </body>
 </html>

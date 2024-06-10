@@ -28,11 +28,16 @@ def app_transbank_pay_view(app):
                 'amount': amount
             }
             return render_template('transbank-pay.html', context=context)
+        
         elif  request.method == 'POST':
 
             domain = urlparse(request.base_url)
             host = domain.hostname
             port = domain.port
+
+            # Obtener el host y el puerto
+            host = request.host.split(':')[0]
+            port = request.host.split(':')[1]
 
             buy_order = request.form.get('buy-order')
             session_id = 12345786 # SESSION ID USER
@@ -51,12 +56,11 @@ def app_transbank_pay_view(app):
             url = 'http://{0}:{1}/api/v1/transbank/transaction/create'.format(host, port)
             print('url: ', url)
             response = requests.post(url, json=body)
-            json_response = response.json()
-            print('json_response: ', json_response)
+            print('json_response: ', response)
             if response.status_code == 200 :
                 context = {
                     'amount': amount,
-                    'transbank' : json_response
+                    'transbank' : response.json()
                 }
                 return render_template('send-pay.html', context=context)
             else: 

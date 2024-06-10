@@ -56,11 +56,12 @@ def transbank_commit(tokenws):
     print('tokenws: ', tokenws)
     # DEFINICIÓN DE URL DE TRANSBANK PARA CONFIRMAR UNA TRANSACCIÓN
     url = "https://webpay3gint.transbank.cl/rswebpaytransaction/api/webpay/v1.2/transactions/{0}".format(tokenws)
+    print('url: ', url)
     # CABECERA SOLICITADA POR TRANSBANK
     headers = header_request_transbank()
     # INVOCACIÓN POR GET A API REST QUE CONFIRMA UNA TRANSACCIÓN EN TRANSBANK    
     response = requests.put(url, headers=headers)
-    print('response: ', response.json())
+    print('response: ', response)
     # RETORNO DE LA RESPUESTA DE TRANSBANK
     return response.json()
 
