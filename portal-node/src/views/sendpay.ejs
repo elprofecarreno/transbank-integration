@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirigiendo a pago...</title>
+</head>
+<body>
+    <form action="<%= transbank.url %>" name="send_pay_form" method="POST">
+        <input type="hidden" name="token_ws" value="<%= transbank.token %>">
+        <input type="hidden" name="amount" value="<%= amount %>">
+    </form>
+    <p>Redirigiendo a la plataforma de pago...</p>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.forms['send_pay_form'].submit();
+      });
+    </script>
+</body>
+</html>

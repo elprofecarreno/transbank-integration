@@ -1,0 +1,11 @@
+<!-- filepath: /home/ccarreno/Descargas/fastfood_portafolio/FastFoodApp/src/views/detalle_pago.ejs -->
+<div class="container mt-5">
+  <h2>Detalle de Pago</h2>
+  <form action="/sendpay" method="POST">
+    <div class="mb-3">
+      <label for="monto" class="form-label">Monto a pagar</label>
+      <input type="number" step="0.01" min="0" class="form-control" id="monto" name="monto" required value="<%= monto %>">  
+    </div>
+    <button type="submit" class="btn btn-primary">Pagar</button>
+  </form>
+</div>
